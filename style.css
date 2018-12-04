@@ -1,10 +1,131 @@
+/* General Styles */
 body {
-    background-color: powderblue;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito Semibold';
+    /*note margin */
+    margin: 0;
 }
+
+p { 
+    color:white; 
+    font-family: 'Arial';
+}
+
 h1 {
-    color: blue;
-    font-size: 1em;
+    text-align: center;
+    font-size: 100px;
 }
-p {
-    color: red;
+
+/* Main Wrappers */
+
+#container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    /*grid-template-columns: repeat(12, 1fr);*/
+    grid-template-areas: 
+        "nav nav nav nav"
+        "footer footer footer footer"
+        "header header header header"
+        ". th1 th1 ."
+        ". th2 th2 ."
+        ". th3 th3 ."
+        ". th4 th4 ."
+    ;
+
+    grid-column-gap: 10px;
+    /*grid-row-gap: 10px;*/
+    /*grid-gap: 10px;*/
 }
+
+@media screen and (min-width: 760px) {
+    
+    #container {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        text-align: center;
+        /*grid-template-columns: repeat(12, 1fr);*/
+        grid-template-areas: 
+            "nav nav nav nav"
+            "header header header header"
+            ". th1 th2 ."
+            ". th3 th4 ."
+            "footer footer footer footer"
+        ;
+
+        grid-column-gap: 2px;
+        /*grid-row-gap: 10px;*/
+        /*grid-gap: 10px;*/
+    }
+    
+}
+
+#container div {
+    /*padding: 30px;*/
+}
+
+/* Navigation */
+.wrap-nav {
+    /*grid-column: 1 / span 12;*/
+    grid-area: nav;
+    background-color: black;
+    padding: 20px;
+}
+
+.wrap-nav p {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 5px;
+    margin-left: 25px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Header and Footer */
+.wrap-header {
+    grid-area: header;
+    height: 300px;
+    background-color: crimson;
+    background-image: url(work/images/hco-header.png);
+    background-position: center;
+}
+
+/* media query on specific attributes =
+@media screen and (max-height: 300px) {
+    .wrap-header {
+        height: 50px;
+    }
+}
+*/
+.wrap-footer {
+    grid-area: footer;
+    height: 70px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+/* Thumbnail Gallery */
+
+.wrap-th1, .wrap-th2, .wrap-th3, .wrap-th4 {
+    margin-top: 10px;
+    
+}
+
+.wrap-th1 {
+    grid-area: th1;
+}
+.wrap-th2 {
+    grid-area: th2;
+}
+.wrap-th3 {
+    grid-area: th3;
+}
+.wrap-th4 {
+    grid-area: th4;
+}
+
+
+
