@@ -6,38 +6,25 @@ body {
 #home {
     display: grid;
     grid-template-areas: 
-        "leftBar header rightBar"
-        "leftBar flowers rightBar"
-        "leftBar footer rightBar"
+        "header"
+        "flowers"
+        "footer"
         ;
     min-height: 900px;
-
+    border-right: 10px solid ;
+    border-left: 10px solid ;
+    border-color: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
 }
 
 #home div {
-    padding: 5px;
     margin: 0;
-}
-
-.leftBar { 
-    grid-area: leftBar;
-    background-color: red;
-    width: 5px;
 }
 
 .header { 
     grid-area: header;
     background-color: blue;
-    justify-content: start;
-    width: 100%;
 }
-.flowers { grid-area: flowers; width: 100%;}
+.flowers { grid-area: flowers; }
 .footer { grid-area: footer; }
-.rightBar { 
-    grid-area: rightBar;
-    background-color: red;
-    width: 10px;
-    justify-content: end;
-}
 
 
