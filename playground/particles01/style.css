@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Share');
+
+/* General Styles */
+body {
+    text-align: center;
+    color: white;
+    font-family: 'Titillium+Web', 'Arial', sans-serif;
+    margin: 0;
+    color: #DDD;
+    background-color: #000;
+    line-height: 1em;
+    font-size: 14px;
+}
+
+p { margin: 0;}
+
+a { 
+    color:#20caee; text-decoration: none;
+}
+
+h1 {
+    font-family: 'Cormorant';
+    font-weight: 300;
+    text-align: left;
+    font-size: 50px;
+}
+
+#particle-js {
+    height: 500px;
+    background-color: firebrick;
+}
