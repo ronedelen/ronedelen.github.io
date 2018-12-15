@@ -44,6 +44,9 @@ h1 {
         ;
         grid-column-gap: 2px;
         justify-items: center;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
     }
     
     .content {
